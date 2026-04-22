@@ -1,0 +1,82 @@
+# ─────────────────────────────────────────────
+# CyberDashboard — .gitignore
+# ─────────────────────────────────────────────
+
+# ── Base de données SQLite (contient des données sensibles) ──
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# ── Variables d'environnement & clés API ──
+.env
+.env.*
+!.env.example
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Environnements virtuels
+venv/
+.venv/
+env/
+ENV/
+.virtualenv/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# Tests & couverture
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+
+# ── IDE & éditeurs ──
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ── Système d'exploitation ──
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+.directory
+
+# ── Logs ──
+*.log
+logs/
+
+# ── Node.js (si ajout d'un outil de build frontend) ──
+node_modules/
+npm-debug.log*
+yarn-error.log*
